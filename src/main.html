@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <!-- css links -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Image Resizer</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="upload-image">
+            <input type="file" accept="image/*" hidden>
+            <img src="./images/upload-icon.svg" alt="">
+            <p>Select  File to Upload</p>
+        </div>
+        <div class="content">
+            <div class="row sizes">
+                <div class="column width">
+                    <label>Width</label>
+                    <input type="number">
+                </div>
+                <div class="column height">
+                    <label>Height</label>
+                    <input type="number">
+                </div>
+            </div>
+            <!-- <div class="row checkboxes">
+                <div class="column ratio">
+                    <input type="checkbox" id="ratio" checked>
+                    <label for="ratio">Aspect Ratio</label>
+                </div>
+            </div> -->
+            <button class="download-btn" id="resize-btn">Resize Image</button>
+            <button class="download-btn" id="download-btn">Download Image</button>
+        </div>
+    </div>
+    <div class="show">
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
